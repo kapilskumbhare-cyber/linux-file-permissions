@@ -78,5 +78,3 @@ This project simulates a shared working environment where multiple users collabo
 ## 👤 Author
 
 Kapil Kumbhare
-
-Focused on building practical Linux and DevOps skills through hands-on projects.
