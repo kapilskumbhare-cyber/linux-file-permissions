@@ -1,24 +1,57 @@
-# Linux File Permissions
+🔐 Linux File Permissions
 
-This repository demonstrates practical understanding of Linux file permissions, including both fundamental concepts and a real-world secure directory setup.
+A hands-on project demonstrating how Linux file permissions work — from basics to a real-world secure shared directory setup.
 
-## Contents
+📂 Project Structure
+linux-file-permissions/
+│
+├── README.md                     # Project overview
+├── fundamentals.md               # Core concepts and commands
+├── secure_shared_directory.md    # Shared folder design
+├── setup.sh                      # Automation script
+└── screenshots/                  # Output verification
+🚀 How to Run
+# Clone the repository
+git clone https://github.com/your-username/linux-file-permissions.git
+cd linux-file-permissions
 
-- fundamentals.md → Core concepts of file and directory permissions
-- secure_shared_directory.md → Design of a secure multi-user directory
-- setup.sh → Script to implement secure directory with proper permissions
+# Make script executable
+chmod +x setup.sh
 
-## Key Concepts Covered
+# Run with sudo
+sudo ./setup.sh
 
-- File vs Directory permissions
-- Numeric and symbolic modes
-- chmod and chown usage
-- setgid for group inheritance
-- Secure access control
+⚠️ Run the script only after reviewing it.
 
-## Use Case
+📌 What This Project Covers
+Understanding permission format (rwxr-xr--)
+File vs directory permissions
+Owner, group, others
+Changing permissions using chmod
+Changing ownership using chown and chgrp
+Shared directory setup with proper access control
+setgid for automatic group inheritance
+sticky bit for safe file deletion
+🧪 Verification
+ls -ld /shared/project
+ls -l /shared/project
+id username
+📂 Example Output
+drwxrws--- root teamgroup /shared/project
+📸 Output
 
-Implemented a secure shared directory where:
-- Only authorized users can access
-- Group ownership is maintained
-- Proper permission control is enforced
+Directory Permissions
+Directory Permissions
+
+Group Inheritance
+Group Inheritance
+
+🧠 Concepts Practised
+Linux permission model
+setgid and sticky bit
+Group-based access control
+Secure file sharing
+Principle of least privilege
+🌍 Real World Use Case
+
+This project simulates a shared working environment where multiple users collaborate on the same directory while maintaining proper access control and preventing unauthorized actions.
