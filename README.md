@@ -41,9 +41,6 @@ drwxrws--- root teamgroup /shared/project
 📸 Output
 
 Directory Permissions
-Directory Permissions
-
-Group Inheritance
 Group Inheritance
 
 🧠 Concepts Practised
